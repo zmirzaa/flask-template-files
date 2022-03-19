@@ -1,0 +1,47 @@
+.login {
+    width: 450px;
+    color:rgb(92, 34, 34);
+}
+
+.register {
+    width: 600px;
+    color:rgb(92, 34, 34);
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+nav, a{
+    color:rgb(92, 34, 34);
+    background-color: none;
+}
+h6 {
+    margin-right: 10px;
+}
+main {
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-success { 
+    background-color: black;
+    border: none; 
+
+}
+
+.btn-primary:hover, .btn-success:hover { 
+    background-color: rgb(92, 34, 34);
+    border: none; 
+
+}
+
+.form-control {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.card{
+    margin-top: 20px;
+    color:rgb(92, 34, 34);
+}
+
