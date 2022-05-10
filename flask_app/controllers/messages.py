@@ -16,7 +16,7 @@ def createMessage():
     return redirect ('/dashboard')
 
 @app.route('/delete/<int:id>')
-def delete(): 
+def delete(id): 
     if 'user_id' not in session: 
         return redirect('/logout')
     

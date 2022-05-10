@@ -23,7 +23,7 @@
         <div class="d-flex justify-content-evenly">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title">Send Messages Here</h3>
+                    <h3 class="card-title text-center">Send Messages Here</h3>
                     {% for u in users %}
                         {% if u.id != session.user_id %}
                             <form class="card-text" action="/createMessage", method="post">
@@ -41,10 +41,13 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h3>{{allMessages|length}} New Messages</h3>
+                    <h3 class="text-center">{{allMessages|length}} New Message(s)</h3>
                     {% for m in allMessages  %}
                         <h4 class="card-title">{{m.sender}} said:</h4>
                         <p class="card-text">{{m.content}}</p>
+                        <div> 
+                            <a class="btn btn-primary" href="/delete/{{m.id}}">Delete</a>
+                        </div>
                     {% endfor %}
                 </div>
             </div>
